@@ -1,0 +1,23 @@
+AppBundle\Entity\Blog:
+    type: entity
+    table: blogs
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nombre:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        createdat:
+            type: date
+            nullable: false
+    lifecycleCallbacks: {  }
